@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   const name = document.getElementById("name").value;
 
   if (age === "" || name.trim() === "") {
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
     return;
   }
 
@@ -23,6 +23,10 @@ form.addEventListener("submit", function (e) {
   });
 
   promise
-    .then((message) => alert(message))
-    .catch((message) => alert(message));
+    .then((message) => {
+      alert(message);
+    })
+    .catch((message) => {
+      alert(message);
+    });
 });
